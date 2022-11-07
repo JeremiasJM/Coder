@@ -1,0 +1,1607 @@
+*{
+	border: 0;
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size:100%;
+	line-height: 1,3;
+	background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	
+}
+header{
+ grid-area: headi;
+ width: 100%;
+}
+nav ul{
+	display: table;
+	list-style-type: none;
+	width: 100%;
+	z-index: 1111;
+	position: fixed;
+	background-color: rgba(121, 120, 120, 0.452);
+	padding: 5px;
+   
+}
+nav li{
+	display: table-cell;
+	text-align: center
+}
+nav li a{	
+	color:rgb(255, 255, 255);
+	font-size: 2.5rem;
+	padding: 10px;
+	text-decoration: none
+}
+.fondoindex{
+	
+	width: 100%;
+	height: 600px;
+}
+.mainindex{
+	grid-area: maini;
+	background-color: rgba(143, 139, 139, 0.384);
+	color: white;
+	font-size: 3.5rem;
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+
+}
+.sectionindex{
+	grid-area: sectioni;
+	align-self: center;
+	text-align: center;
+	font-size: 2rem;
+	color: black;
+	padding: 80px;
+}
+.asideindex{
+	grid-area: asidei;
+	align-self: center;
+	text-align: center;
+	font-size: 2.8rem;
+	padding: 10px;
+}
+.ubicacionindex{
+    justify-self: center;
+	align-self: flex-end;
+	margin-top: 400px;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+    border: groove;
+	width: 10%;
+	background-color: black;
+}
+footer{
+	grid-area: footer;
+    color: white;
+	background-color: rgba(143, 139, 139, 0.384);
+	
+}
+.logo{
+	width: 2%;
+}
+.redes{
+	
+	display: flex;	
+   
+   justify-content: center;
+	
+}
+.form{
+	justify-self: center;
+	align-self: center;
+	padding: 10px;
+	
+}
+.contacto{
+	padding: 10px;
+	font-size: 1.5rem;
+}
+.grillasindex{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto 120px 170px 200px 300px 120px;
+	grid-template-areas: 
+	"headi headi headi"
+	"maini maini maini"
+	"sectioni sectioni sectioni"
+	"asidei asidei asidei"
+	"imageni1 imageni2 imageni3"
+	"footer footer footer";
+}
+.imageni1{
+	grid-area: imageni1;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+}
+.imageni2{
+	grid-area: imageni2;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+}
+.imageni3{
+	grid-area: imageni3;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+
+}
+.h6index{
+	color: white;
+	text-align: center;
+	font-size: 1.8rem;
+	padding: 15px;
+	animation-name: aparecer;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.informacion{
+	text-align: center;
+	padding: 10px;
+	font-size: 1.3rem;
+}
+@keyframes aparecer{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+.iconos{
+	margin-left: 925px;
+	width:3.5%;
+	
+}
+/* TAMAÑO TABLET */
+
+@media screen and (max-width: 768px){
+	
+	.grillasindex{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 400px 100px 150px 100px 300px 250px;
+		grid-template-areas: 
+		"headi headi headi"
+		"maini maini maini"
+		"sectioni sectioni sectioni"
+		"asidei asidei asidei"
+		"imageni1 imageni2 imageni3"
+		"footer footer footer";
+	}
+	.fondoindex{
+		width: 100%;
+		height: 400px;
+	}
+	.mainindex{
+		grid-area: maini;
+		background-color: black;
+		color: white;
+		font-size: 3rem;
+		text-align: center;
+		padding: 2rem;
+		width: 100%;
+	
+	}
+	
+	.imageni1{
+		grid-area: imageni1;
+		justify-self: center;
+		align-self: center;
+		width: 60%;
+	}
+	.imageni2{
+		grid-area: imageni2;
+		justify-self: center;
+		align-self: center;
+		width: 60%;
+	}
+	.imageni3{
+		grid-area: imageni3;
+		justify-self: center;
+		align-self: center;
+		width: 60%;
+	}
+	.form{
+		justify-self: center;
+		align-self: center;
+		padding: 10px;
+		width: 10%;
+	}
+	.h6index{
+		color: white;
+		text-align: center;
+		font-size: 1.1rem;
+		 }
+}
+/* MOBILE */
+@media screen and (max-width: 500px){
+
+.grillasindex{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 250px 70px 310px 100px 200px 200px 200px 170px;
+		grid-template-areas: 
+		"headi"
+		"maini"
+		"sectioni"
+		"asidei"
+		"imageni1"
+		"imageni2"
+		"imageni3"
+		"footer ";
+	}
+	nav ul{
+		display: table;
+		list-style-type: none;
+		width: 100%;
+		background-color: black;
+		padding: 10px;
+	}
+	nav li{
+		display: table-cell;
+		text-align: center;
+		
+		
+	}
+	nav li a{
+		color: white;
+		font-size: 1.5rem;
+		text-decoration: none;
+		
+		
+	}
+	.fondoindex{
+		width: 100%;
+		height: 215px;
+	}
+	.mainindex{
+		grid-area: maini;
+		background-color: black;
+		color: white;
+		font-size: 1.9rem;
+		text-align: center;
+		padding: 2rem;
+		width: 100%;
+	
+	}
+	.sectionindex{
+		grid-area: sectioni;
+		align-self: center;
+		text-align: center;
+		width: 100%;
+		font-size: 1.5rem;
+		color: black;
+		padding: 80px;
+	}
+	.asideindex{
+		font-size: 2rem;
+	}
+	
+	.imageni1{
+		grid-area: imageni1;
+		justify-self: center;
+		align-self: center;
+		width: 30%;
+	}
+	.imageni2{
+		grid-area: imageni2;
+		justify-self: center;
+		align-self: center;
+		width: 30%;
+	}
+	.imageni3{
+		grid-area: imageni3;
+		justify-self: center;
+		align-self: center;
+		width: 30%;
+	}
+	.form{
+		justify-self: center;
+		align-self: center;
+		padding: 10px;
+		width: 50%;
+	}
+	.h6index{
+		color: white;
+		text-align: center;
+		font-size: 1.1rem;
+		 }
+}
+
+/* NOSOTROS */
+
+.fondonosotros{
+	width: 100%;
+	height: 600px;
+}
+
+.pastorgeneral{
+	align-self: center;
+	font-size: 3rem;
+	font-style: italic;
+	text-decoration: underline;
+	text-align: center;
+	
+	
+}
+.imagenpastor1{
+	width: 400px;
+	height: 400px;
+	justify-self: center;
+	border-radius: 50%;
+
+	
+}
+.imagenpastor2{
+	width: 400px;
+	height: 400px;
+	justify-self: center;
+	border-radius: 50%;
+
+}
+.imagenpastor3{
+	width: 400px;
+	height: 400px;
+	justify-self: center;
+	border-radius: 50%;
+
+	
+}
+.nombre{
+	font-size: 2rem;
+	text-align: center;
+	width: 100%;
+
+}
+
+.descripciones{
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 50px;
+	width: 100%;
+}
+
+.grillasnosotros{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 70px 450px 140px 70px 450px 140px 70px 450px 100px 150px ;
+	grid-template-areas:
+	"pastores pastores "
+	"foto1 foto1"
+	"descripcion1 descripcion2"
+	"pastoressur pastoressur"
+	"foto2 foto2"
+	"descripcion11 descripcion22"
+	"pastoranorte pastoranorte"
+	"foto3 foto3"
+	"descripcion3 descripcion3"
+	"vision vision"
+	;
+}
+	
+.vision{
+	grid-area: vision;
+}
+.pastores{
+	grid-area: pastores;
+	justify-content: center;
+	
+}
+.foto1{
+	grid-area: foto1;
+}
+.descripcion1{
+	grid-area: descripcion1;
+}
+.descripcion2{
+	grid-area: descripcion2;
+}
+.pastoressur{
+	grid-area: pastoressur;
+}
+.foto2{
+	grid-area: foto2;
+	
+}
+.sur{
+	grid-area: sur;
+}
+.descripcion11{
+	grid-area: descripcion11;
+}
+.descripcion22{
+	grid-area: descripcion22;
+}
+.pastoranorte{
+	grid-area: pastoranorte;
+}
+.foto3{
+	grid-area: foto3;
+}
+.descripcion3{
+	grid-area: descripcion3;
+	
+}
+.nuestravision{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+/* 1024px */
+@media screen and ( max-width: 1024px){
+	.grillasnosotros{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows:  60px 200px 170px 60px 270px 170px 70px 350px 100px 150px ;
+		grid-template-areas: 
+		"pastores pastores "
+		"foto1 foto1"
+		"descripcion1 descripcion2"
+		"pastoressur pastoressur"
+		"foto2 foto2"
+		"descripcion11 descripcion22"
+		"pastoranorte pastoranorte"
+		"foto3 foto3"
+		"descripcion3 descripcion3"
+		"vision vision"
+		;
+	}
+	.fondonosotros{
+		width: 100%;
+		height: 500px;
+	}
+
+	
+}
+/* mobile */
+@media screen and ( max-width: 500px){
+	.grillasnosotros{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows:  30px 180px 170px 170px 30px 180px 170px 170px 30px 190px 170px 200px ;
+		grid-template-areas: 
+		"pastores  "
+		"foto1 "
+		"descripcion1"
+		"descripcion2"
+		"pastoressur "
+		"foto2 "
+		"descripcion11"
+		"descripcion22"
+		"pastoranorte"
+		"foto3 "
+		"descripcion3 "
+		"vision "
+		;
+	}
+	.vision{
+		grid-area: vision;
+		font-size: 2.2;
+	}
+	.fondonosotros{
+		width: 100%;
+		height: 200px;
+	}
+	.pastores{
+		grid-area: pastores;
+		justify-content: center;
+		font-size: 2.2rem;
+		
+	}
+	.foto1{
+		width: 50%;
+	}
+	.foto2{
+		width: 40%;
+	}
+	.foto3{
+		width: 35%;
+	}
+	.descripcion1{
+		grid-area: descripcion1;
+		font-size: 1.4rem;
+		
+	}
+	.descripcion2{
+		grid-area: descripcion2;
+		font-size: 1.4rem;
+	}
+	.pastoressur{
+		grid-area: pastoressur;
+		justify-content: center;
+		font-size: 2.2rem;
+	}
+	
+	
+	.descripcion11{
+		grid-area: descripcion11;
+		font-size: 1.4rem;
+	}
+	.descripcion22{
+		grid-area: descripcion22;
+		font-size: 1.4rem;
+	}
+	.pastoranorte{
+		grid-area: pastoranorte;
+		justify-content: center;
+		font-size: 2.2rem;
+	}
+	
+	.descripcion3{
+		grid-area: descripcion3;
+		font-size: 1.4rem;
+		
+	}
+	
+}
+/* MINISTERIOS */
+.fondoministerios{
+	width: 100%;
+	height: 600px;
+}
+.grillasministerios{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 210px 70px 60px 50px 300px 50px 20px 450px 70px 450px;
+	grid-template-areas: 
+	"kid kid kid"
+	"infkid infkid infkid"
+	"sedesk sedesk sedesk"
+	"zonanorte zonacentrica zonasur"
+	"kid1 kid2 kid3"
+	"hora1 hora2 hora3"
+	"hr hr hr"
+	"jovenes jovenes jovenes"
+	"jovenest jovenest jovenest"
+	"joven1 joven2 joven3";
+}
+.kid{
+	grid-area: kid;
+	justify-self: center;
+	align-self: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.infkid{
+	grid-area: infkid;
+	align-self: center;
+	text-align: center;
+	font-size: 1.7rem;
+	font-style: oblique;
+}
+.sedesk{
+	grid-area: sedesk;
+	align-self: center;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 3rem;
+	font-style: italic;
+}
+.zonanorte{
+	grid-area: zonanorte;
+	align-self: center;
+	text-align: center;
+	font-size: 2rem;
+	font-style: italic;
+}
+.zonacentrica{
+	grid-area: zonacentrica;
+	align-self: center;
+	text-align: center;
+	font-size: 2rem;
+	font-style: italic;
+}
+.zonasur{
+	grid-area: zonasur;
+	align-self: center;
+	text-align: center;
+	font-size: 2rem;
+	font-style: italic;
+}
+.kid1{
+	grid-area: kid1;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+}
+.kid2{
+	grid-area: kid2;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+}
+.kid3{
+	grid-area: kid3;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+}
+.hora1{
+	grid-area: hora1;
+	justify-self: center;
+	align-self: center;
+	font-size: 1.5rem;
+}
+.hora2{
+	grid-area: hora2;
+	justify-self: center;
+	align-self: center;
+	font-size: 1.5rem;
+}
+.hora3{
+	grid-area: hora3;
+	justify-self: center;
+	align-self: center;
+	font-size: 1.5rem;
+}
+.hr{
+	grid-area: hr;
+}
+.jovenes{
+	grid-area: jovenes;
+	justify-self: center;
+	width: 35%;
+	
+}
+.jovenest{
+	grid-area: jovenest;
+	text-align: center;
+	font-size: 1.7rem;
+	justify-self: center;
+	align-self: center;
+	font-style: oblique;
+}
+.joven1{
+	grid-area: joven1;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+	margin-bottom: 10px;
+}
+.joven2{
+	grid-area: joven2;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+	margin-bottom: 10px;
+
+}
+.joven3{
+	grid-area: joven3;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+
+	
+
+}
+/* 1024px */
+@media screen and ( max-width: 1024px){
+	.grillasministerios{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 120px 70px 60px 50px 200px 50px 20px 150px 70px 450px;
+		grid-template-areas: 
+		"kid kid kid"
+		"infkid infkid infkid"
+		"sedesk sedesk sedesk"
+		"zonanorte zonacentrica zonasur"
+		"kid1 kid2 kid3"
+		"hora1 hora2 hora3"
+		"hr hr hr"
+		"jovenes jovenes jovenes"
+		"jovenest jovenest jovenest"
+		"joven1 joven2 joven3";
+	}
+	.fondoministerios{
+		width: 100%;
+		height: 500px;
+	}
+	
+	.infkid{
+		grid-area: infkid;
+		align-self: center;
+		text-align: center;
+		font-size: 1.7rem;
+		font-style: oblique;
+	}
+	.sedesk{
+		grid-area: sedesk;
+		align-self: center;
+		text-align: center;
+		text-decoration: underline;
+		font-size: 3rem;
+		font-style: italic;
+	}
+	.zonanorte{
+		grid-area: zonanorte;
+		align-self: center;
+		text-align: center;
+		font-size: 2rem;
+		font-style: italic;
+	}
+	.zonacentrica{
+		grid-area: zonacentrica;
+		align-self: center;
+		text-align: center;
+		font-size: 2rem;
+		font-style: italic;
+	}
+	.zonasur{
+		grid-area: zonasur;
+		align-self: center;
+		text-align: center;
+		font-size: 2rem;
+		font-style: italic;
+	}
+	.kid1{
+		grid-area: kid1;
+		justify-self: center;
+		align-self: center;
+		width: 80%;
+	}
+	.kid2{
+		grid-area: kid2;
+		justify-self: center;
+		align-self: center;
+		width: 80%;
+	}
+	.kid3{
+		grid-area: kid3;
+		justify-self: center;
+		align-self: center;
+		width: 80%;
+	}
+	.hora1{
+		grid-area: hora1;
+		justify-self: center;
+		align-self: center;
+		font-size: 1.5rem;
+	}
+	.hora2{
+		grid-area: hora2;
+		justify-self: center;
+		align-self: center;
+		font-size: 1.5rem;
+	}
+	.hora3{
+		grid-area: hora3;
+		justify-self: center;
+		align-self: center;
+		font-size: 1.5rem;
+	}
+	
+	.jovenes{
+		grid-area: jovenes;
+		justify-self: center;
+		width: 60%;
+	}
+	.jovenest{
+		grid-area: jovenest;
+		text-align: center;
+		font-size: 1.7rem;
+		justify-self: center;
+		align-self: center;
+		font-style: oblique;
+	}
+	
+}
+/* mobile */
+@media screen and ( max-width: 500px){
+	.grillasministerios{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 120px 110px 60px 30px 20px 150px 30px 20px 150px 30px 20px 150px  10px 100px 130px 180px 210px 280px ;
+		grid-template-areas: 
+		"kid "
+		"infkid "
+		"sedesk "
+		"zonanorte"
+		"hora1"
+		"kid1"
+		
+		"zonacentrica "
+		"hora2"
+		"kid2"
+		
+		"zonasur"
+		"hora3"		
+		" kid3"
+		
+		"hr"
+		"jovenes"
+		"jovenest"
+		"joven1"
+		"joven2"
+		"joven3"
+		;
+	}
+	.fondoministerios{
+		width: 100%;
+		height: 200px;
+	}
+	
+	.infkid{
+		grid-area: infkid;
+		align-self: center;
+		text-align: center;
+		font-size: 1.7rem;
+		font-style: oblique;
+	}
+	.sedesk{
+		grid-area: sedesk;
+		align-self: center;
+		text-align: center;
+		text-decoration: underline;
+		font-size: 3rem;
+		font-style: italic;
+	}
+	.zonanorte{
+		grid-area: zonanorte;
+		align-self: center;
+		text-align: center;
+		font-size: 2rem;
+		font-style: italic;
+	}
+	.zonacentrica{
+		grid-area: zonacentrica;
+		align-self: center;
+		text-align: center;
+		font-size: 2rem;
+		font-style: italic;
+	}
+	.zonasur{
+		grid-area: zonasur;
+		align-self: center;
+		text-align: center;
+		font-size: 2rem;
+		font-style: italic;
+	}
+	.kid1{
+		grid-area: kid1;
+		justify-self: center;
+		align-self: center;
+		width: 40%;
+	}
+	.kid2{
+		grid-area: kid2;
+		justify-self: center;
+		align-self: center;
+		width: 40%;
+	}
+	.kid3{
+		grid-area: kid3;
+		justify-self: center;
+		align-self: center;
+		width: 40%;
+	}
+	.hora1{
+		grid-area: hora1;
+		justify-self: center;
+		align-self: center;
+		font-size: 1.5rem;
+	}
+	.hora2{
+		grid-area: hora2;
+		justify-self: center;
+		align-self: center;
+		font-size: 1.5rem;
+	}
+	.hora3{
+		grid-area: hora3;
+		justify-self: center;
+		align-self: center;
+		font-size: 1.5rem;
+	}
+	
+	.jovenes{
+		grid-area: jovenes;
+		justify-self: center;
+		width: 80%;
+	}
+	.jovenest{
+		grid-area: jovenest;
+		text-align: center;
+		font-size: 1.3rem;
+		justify-self: center;
+		align-self: center;
+		font-style: oblique;
+	}
+	.joven1{
+		grid-area: joven1;
+		justify-self: center;
+		align-self: center;
+		width: 30%;
+	}
+	.joven2{
+		grid-area: joven2;
+		justify-self: center;
+		align-self: center;
+		width: 30%;
+	}
+	.joven3{
+		grid-area: joven3;
+		justify-self: center;
+		align-self: center;
+		width: 30%;
+	}
+}
+/* MISIONES */
+.fondomisiones{
+	width: 100%;
+	height: 600px;
+}
+
+.grillamisiones{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 70px 10px 50px 410px 130px 130px 50px 70px 50px 710px  10px 70px 500px 120px 70px 100px;
+	grid-template-areas: 
+	"misionest misionest"
+	"hrm hrm"
+	"nuestro nuestro"
+	"imagenm imagenm"
+	"eve julian"
+	"thiago facu"
+	"suobjetivos suobjetivos"
+	"descripcionobjetivos descripcionobjetivos"
+	"sutrabajo sutrabajo"
+	"sustrabajos sustrabajos"
+	"hrmm hrmm"
+	"futuros futuros"
+	"imagenm2 imagenm2"
+	"matias ruth"
+	"suobjetivo2 suobjetivo2"
+	"descripcionobjetivos2 descripcionobjetivos2"
+	;
+}
+
+.descripcionesmisiones{
+	text-align: center;
+	padding-top: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.misionest{
+	grid-area: misionest;
+	justify-self: center;
+	align-self: center;
+	text-align: center;
+	font-size: 2rem;
+	font-style: oblique;
+
+}
+.suobjetivo{
+	grid-area: suobjetivos;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
+	font-size: 3rem;
+}
+.descripcionobjetivos{
+	grid-area: descripcionobjetivos;
+	align-self: center;
+	font-size: 1.8rem;
+	text-align: center;
+
+}
+.suvisiondescripcion{
+	font-size: 1.5;
+}
+.sutrabajo{
+	grid-area: sutrabajo;
+	text-align: center;
+	font-size: 3rem;
+
+}
+.sustrabajos{
+	grid-area: sustrabajos;
+}
+.grillasutrabajo{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 300px 300px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	grid-template-areas: 
+	"trabajo1 trabajo2 trabajo3 trabajo4"
+	"trabajo5 trabajo6 trabajo7 trabajo8";
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.grillasutrabajo img:hover{
+	transform: scale(1.10);
+}
+.imagentrabajo1{
+	grid-area:trabajo1;
+	width: 100%;
+	height: 100%;
+
+	
+}
+.imagentrabajo2{
+	grid-area: trabajo2;
+	width: 100%;
+	height: 100%;
+
+	
+}
+.imagentrabajo3{
+	grid-area: trabajo3;
+	width: 100%;
+	height: 100%;
+
+	
+
+}
+.imagentrabajo4{
+	grid-area: trabajo4;
+   	width: 100%;
+	height: 100%;
+	
+}
+.imagentrabajo5{
+	grid-area: trabajo5;
+	width: 100%;
+	height: 100%;
+
+}
+.imagentrabajo6{
+	grid-area:trabajo6;
+	width: 100%;
+	height: 100%;
+
+}
+.imagentrabajo7{
+	grid-area:trabajo7;
+	width: 100%;
+	height: 100%;
+
+}
+.imagentrabajo8{
+	grid-area:trabajo8;
+	width: 100%;
+	height: 100%;
+
+}
+
+.hrm{
+	grid-area: hrm;
+}
+.nuestro{
+	grid-area: nuestro;
+	justify-self: center;
+	align-self: center;
+	font-size: 3rem;
+	font-style: italic;
+	text-decoration: underline;
+}
+.imagenm{
+	grid-area: imagenm;
+	width: 20%;
+	justify-self: center;
+	align-self: center;
+}
+.eve{
+	grid-area: eve;
+	justify-self: center;
+	font-size: 1.7rem;
+	
+}
+.julian{
+	grid-area: julian;
+	justify-self: center;
+	font-size: 1.7rem;
+}
+.thiago{
+	grid-area: thiago;
+	justify-self: center;
+	font-size: 1.7rem;
+}
+.facu{
+	grid-area: facu;
+	justify-self: center;
+	font-size: 1.7rem;
+}
+
+.hrmm{
+	grid-area: hrmm;
+}
+.futuros{
+	grid-area: futuros;
+	justify-self: center;
+	align-self: center;
+	font-size: 3rem;
+	font-style: italic;
+	text-decoration: underline;
+}
+.imagenm2{
+	grid-area: imagenm2;
+	width: 20%;
+	justify-self: center;
+	align-self: center;
+}
+.matias{
+	grid-area: matias;
+	justify-self: center;
+	font-size: 1.7rem;
+}
+.ruth{
+	grid-area: ruth;
+	justify-self: center;
+	font-size: 1.7rem;
+}
+.suobjetivo2{
+	grid-area: suobjetivo2;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
+	font-size: 3rem;
+}
+.descripcionobjetivos2{
+	grid-area: descripcionobjetivos2;
+	align-self: center;
+	font-size: 1.8rem;
+	text-align: center;
+
+}
+
+/* 1024px */
+@media screen and ( max-width: 1024px){
+	.grillamisiones{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 70px 10px 50px 250px 150px 150px 10px 70px 250px 150px ;
+		grid-template-areas: 
+		"misionest misionest"
+		"hrm hrm"
+		"nuestro nuestro"
+		"imagenm imagenm"
+		"eve julian"
+		"thiago facu"
+        "hrmm hrmm"
+		"futuros futuros"
+		"imagenm2 imagenm2"
+		"matias ruth"
+		;
+	}
+	.fondomisiones{
+		width: 100%;
+		height: 500px;
+	}
+	.descripcionesmisiones{
+		text-align: center;
+		padding-top: 40px;
+	}
+	
+	.eve{
+		grid-area: eve;
+		justify-self: center;
+		font-size: 1.7rem;
+	}
+	.julian{
+		grid-area: julian;
+		justify-self: center;
+		font-size: 1.7rem;
+	}
+	.thiago{
+		grid-area: thiago;
+		justify-self: center;
+		font-size: 1.7rem;
+	}
+	.facu{
+		grid-area: facu;
+		justify-self: center;
+		font-size: 1.7rem;
+	}
+	.hrmm{
+		grid-area: hrmm;
+	}
+
+	.matias{
+		grid-area: matias;
+		justify-self: center;
+		font-size: 1.7rem;
+	}
+	.ruth{
+		grid-area: ruth;
+		justify-self: center;
+		font-size: 1.7rem;
+	}
+	
+}
+/* table */
+@media screen and ( max-width: 768px){
+	.grillamisiones{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 70px 10px 50px 200px 200px 200px 10px 70px 200px 180px ;
+		grid-template-areas: 
+		"misionest misionest"
+		"hrm hrm"
+		"nuestro nuestro"
+		"imagenm imagenm"
+		"eve julian"
+		"thiago facu"
+		"hrmm hrmm"
+		"futuros futuros"
+		"imagenm2 imagenm2"
+		"matias ruth"
+		;
+}
+ }
+
+/* mobile */
+@media screen and ( max-width: 500px){
+	.grillamisiones{
+		display: grid;
+		grid-template-columns: 1fr ;
+		grid-template-rows: 70px 10px 50px 190px repeat(4, 150px) 10px 50px 190px 170px 170px ;
+		grid-template-areas: 
+		"misionest "
+		"hrm "
+		"nuestro "
+		"imagenm "
+		"eve"
+		"julian"
+		"thiago"
+		"facu"
+		"hrmm "
+		"futuros"
+		"imagenm2"
+		"matias"
+		"ruth"
+		;
+	}
+	.fondomisiones{
+		width: 100%;
+		height: 200px;
+	}
+	
+	.misionest{
+		grid-area: misionest;
+		justify-self: center;
+		align-self: center;
+		text-align: center;
+		font-size: 1.5rem;
+		font-style: oblique;
+	
+	}
+	
+	.nuestro{
+		grid-area: nuestro;
+		justify-self: center;
+		align-self: center;
+		font-size: 2.4rem;
+		font-style: italic;
+		text-decoration: underline;
+	}
+	.imagenm{
+		grid-area: imagenm;
+		width: 40%;
+		justify-self: center;
+		align-self: center;
+	}
+		
+	.futuros{
+		grid-area: futuros;
+		justify-self: center;
+		align-self: center;
+		font-size: 2.4rem;
+		font-style: italic;
+		text-decoration: underline;
+	}
+	.imagenm2{
+		grid-area: imagenm2;
+		width: 40%;
+		justify-self: center;
+		align-self: center;
+	}
+	.matias{
+		grid-area: matias;
+		justify-self: center;
+		font-size: 1.7rem;
+	}
+	.ruth{
+		grid-area: ruth;
+		justify-self: center;
+		font-size: 1.7rem;
+	}
+	
+}
+/* UBICACION */
+.fondoubicacion{
+	width: 100%;
+	height: 600px;
+}
+.textodia{
+	padding: 40px;
+}
+.grillagaleria{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 10px 30px 250px 250px 50px 250px 250px 50px 250px 250px 50px 250px 250px 50px 270px;
+	grid-template-areas: 
+	"hru hru hru hru"
+	"galeriacultotexto galeriacultotexto galeriacultotexto galeriacultotexto "
+	"galeriaculto1 galeriaculto2 galeriaculto3 galeriaculto4"
+	"galeriaculto5 galeriaculto6 galeriaculto7 galeriaculto8"
+	"galeriaaj galeriaaj galeriaaj galeriaaj"
+	"galeriaaj1 galeriaaj2 galeriaaj3 galeriaaj4"
+	"galeriaaj5 galeriaaj6 galeriaaj7 galeriaaj8"
+	"galerianiños galerianiños galerianiños galerianiños"
+	"galerianiños1 galerianiños2 galerianiños3 galerianiños4"
+	"galerianiños5 galerianiños6 galerianiños7 galerianiños8"
+	"campa campa campa campa"
+	"campa1 campa2 campa3 campa4"
+	"campa5 campa6 campa7 campa8"
+	"bautismo bautismo bautismo bautismo"
+	"bautismo1 bautismo2 bautismo3 bautismo4"
+	;
+	grid-gap: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.grillagaleria img:hover{
+	transform: scale(1.10);
+}
+.hru{
+	grid-area: hru;
+}
+
+.galeriacultotexto{
+	grid-area: galeriacultotexto;
+	font-size: 3rem;
+	text-align: center;
+}
+.galeriaculto1{
+	grid-area: galeriaculto1;
+	width: 100%;
+	height: 100%;
+	
+
+}
+.galeriaculto2{
+	grid-area: galeriaculto2;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaculto3{
+	grid-area: galeriaculto3;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaculto4{
+	grid-area: galeriaculto4;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaculto5{
+	grid-area: galeriaculto5;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaculto6{
+	grid-area: galeriaculto6;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaculto7{ 
+	grid-area: galeriaculto7;
+	width: 100%;
+	height: 100%;
+
+}.galeriaculto8{
+	grid-area: galeriaculto8;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj{
+	grid-area: galeriaaj;
+	font-size: 3rem;
+	text-align: center;
+}
+.galeriaaj1{
+	grid-area: galeriaaj1;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj2{
+	grid-area: galeriaaj2;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj3{
+	grid-area: galeriaaj3;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj4{
+	grid-area: galeriaaj4;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj5{
+	grid-area: galeriaaj5;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj6{
+	grid-area: galeriaaj6;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj7{
+	grid-area: galeriaaj7;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj8{
+	grid-area: galeriaaj8;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños{
+	grid-area: galerianiños;
+	font-size: 3rem;
+	text-align: center;
+}
+.galerianiños1{
+	grid-area: galerianiños1;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños2{
+	grid-area: galerianiños2;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños3{
+	grid-area: galerianiños3;
+	width: 100%;
+	height: 100%;
+
+}.galerianiños4{
+	grid-area: galerianiños4;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños5{
+	grid-area: galerianiños5;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños6{
+	grid-area: galerianiños6;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños7{
+	grid-area: galerianiños7;
+	width: 100%;
+	height: 100%;;
+
+}
+.galerianiños8{
+	grid-area: galerianiños8;
+	width: 100%;
+	height: 100%;
+
+}
+.campa{
+	grid-area: campa;
+	font-size: 3rem;
+	text-align: center;
+}
+.campa1{
+	grid-area: campa1;
+	width: 100%;
+	height: 100%;
+}
+.campa2{
+	grid-area: campa2;
+	width: 100%;
+	height: 100%;
+}
+.campa3{
+	grid-area: campa3;
+	width: 100%;
+	height: 100%;
+}
+.campa4{
+	grid-area: campa4;
+	width: 100%;
+	height: 100%;
+}
+.campa5{
+	grid-area: campa5;
+	width: 100%;
+	height: 100%;
+}
+.campa6{
+	grid-area: campa6;
+	width: 100%;
+	height: 100%;
+}
+.campa7{
+	grid-area: campa7;
+	width: 100%;
+	height: 100%;
+}
+.campa8{
+	grid-area: campa8;
+	width: 100%;
+	height: 100%;
+}
+.bautismo{
+	grid-area: bautismo;
+	font-size: 3rem;
+	text-align: center;
+	
+
+}
+.bautismo1{
+	grid-area: bautismo1;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 20px;
+
+
+}
+.bautismo2{
+	grid-area: bautismo2;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 20px;
+
+
+}
+.bautismo3{
+	grid-area: bautismo3;
+	width: 100%;
+	height: 100%;  
+	 padding-bottom: 20px;
+
+}
+.bautismo4{
+	grid-area: bautismo4;
+	width: 100%;
+	height: 100%;
+    padding-bottom: 20px;
+}
