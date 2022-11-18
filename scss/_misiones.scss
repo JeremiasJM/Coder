@@ -460,7 +460,7 @@
 	.grillamisiones{
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 80px 10px 35px 150px repeat(4, 85px) 40px 70px 35px 640px 10px 40px 140px repeat(2, 100px) 40px 40px;
+		grid-template-rows: 80px 10px 35px 150px repeat(4, 100px) 40px 70px 35px 640px 10px 40px 140px repeat(2, 100px) 40px 40px;
 		grid-template-areas: 
 		"misionest"
 		"hrm"
@@ -495,6 +495,8 @@
     .nuestro{
         grid-area: nuestro;
         font-size: 1.8rem;
+        justify-self: center;
+	    align-self: center;
     }
     .imagenm{
         grid-area: imagenm;
@@ -503,18 +505,26 @@
     .eve{
         grid-area: eve;
         font-size: 1.1rem;
+        justify-self: center;
+
     }
     .julian{
         grid-area: julian;
         font-size: 1.1rem;
+        justify-self: center;
+
     }
     .thiago{
         grid-area: thiago;
         font-size: 1.1rem;
+        justify-self: center;
+
     }
     .facu{
         grid-area: facu;
         font-size: 1.1rem;
+        justify-self: center;
+
     }
     .suobjetivo{
         grid-area: suobjetivos;
@@ -564,10 +574,14 @@
     .matias{
         grid-area: matias;
         font-size: 1.1rem;
+        justify-self: center;
+
     }
     .ruth{
         grid-area: ruth;
         font-size: 1.1rem;
+        justify-self: center;
+
     }
     .suobjetivo2{
         grid-area: suobjetivo2;

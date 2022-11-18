@@ -395,15 +395,21 @@
 	.zonanorte{
 		grid-area: zonanorte;
 		font-size: 1.8rem;
+		align-self: center;
+		text-align: center;
 		
 	}
 	.zonacentrica{
 		grid-area: zonacentrica;
-		font-size: 1.8rem;		
+		font-size: 1.8rem;	
+		align-self: center;
+		text-align: center;	
 	}
 	.zonasur{
 		grid-area: zonasur;
 		font-size: 1.8rem;
+		align-self: center;
+		text-align: center;
 	}
 	.kid1{
 		grid-area: kid1;
@@ -426,14 +432,20 @@
 	.hora1{
 		grid-area: hora1;
 		font-size: 1.3rem;
+		align-self: center;
+		text-align: center;
 	}
 	.hora2{
 		grid-area: hora2;
 		font-size: 1.3rem;
+		align-self: center;
+		text-align: center;
 	}
 	.hora3{
 		grid-area: hora3;
 		font-size: 1.3rem;
+		align-self: center;
+		text-align: center;
 	}
 	.jovenes{
 		grid-area: jovenes;

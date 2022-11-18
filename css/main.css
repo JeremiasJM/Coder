@@ -486,7 +486,7 @@ footer {
   .grillasnosotros {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 35px 185px 125px 125px 35px 185px 125px 125px 30px 190px 125px 150px;
+    grid-template-rows: 35px 185px 130px 130px 35px 185px 130px 130px 30px 190px 130px 170px;
     grid-template-areas: "pastores  " "foto1 " "descripcion1" "descripcion2" "pastoressur " "foto2 " "descripcion11" "descripcion22" "pastoranorte" "foto3 " "descripcion3 " "vision ";
   }
   .vision {
@@ -902,14 +902,20 @@ footer {
   .zonanorte {
     grid-area: zonanorte;
     font-size: 1.8rem;
+    align-self: center;
+    text-align: center;
   }
   .zonacentrica {
     grid-area: zonacentrica;
     font-size: 1.8rem;
+    align-self: center;
+    text-align: center;
   }
   .zonasur {
     grid-area: zonasur;
     font-size: 1.8rem;
+    align-self: center;
+    text-align: center;
   }
   .kid1 {
     grid-area: kid1;
@@ -932,14 +938,20 @@ footer {
   .hora1 {
     grid-area: hora1;
     font-size: 1.3rem;
+    align-self: center;
+    text-align: center;
   }
   .hora2 {
     grid-area: hora2;
     font-size: 1.3rem;
+    align-self: center;
+    text-align: center;
   }
   .hora3 {
     grid-area: hora3;
     font-size: 1.3rem;
+    align-self: center;
+    text-align: center;
   }
   .jovenes {
     grid-area: jovenes;
@@ -1364,7 +1376,7 @@ footer {
   .grillamisiones {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 10px 35px 150px repeat(4, 85px) 40px 70px 35px 640px 10px 40px 140px repeat(2, 100px) 40px 40px;
+    grid-template-rows: 80px 10px 35px 150px repeat(4, 100px) 40px 70px 35px 640px 10px 40px 140px repeat(2, 100px) 40px 40px;
     grid-template-areas: "misionest" "hrm" "nuestro" "imagenm" "eve" "julian" "thiago" "facu" "suobjetivos" "descripcionobjetivos" "sutrabajo" "sustrabajos" "hrmm" "futuros" "imagenm2" "matias" "ruth" "suobjetivo2" "descripcionobjetivos2";
   }
   .fondomisiones {
@@ -1378,6 +1390,8 @@ footer {
   .nuestro {
     grid-area: nuestro;
     font-size: 1.8rem;
+    justify-self: center;
+    align-self: center;
   }
   .imagenm {
     grid-area: imagenm;
@@ -1386,18 +1400,22 @@ footer {
   .eve {
     grid-area: eve;
     font-size: 1.1rem;
+    justify-self: center;
   }
   .julian {
     grid-area: julian;
     font-size: 1.1rem;
+    justify-self: center;
   }
   .thiago {
     grid-area: thiago;
     font-size: 1.1rem;
+    justify-self: center;
   }
   .facu {
     grid-area: facu;
     font-size: 1.1rem;
+    justify-self: center;
   }
   .suobjetivo {
     grid-area: suobjetivos;
@@ -1438,10 +1456,12 @@ footer {
   .matias {
     grid-area: matias;
     font-size: 1.1rem;
+    justify-self: center;
   }
   .ruth {
     grid-area: ruth;
     font-size: 1.1rem;
+    justify-self: center;
   }
   .suobjetivo2 {
     grid-area: suobjetivo2;
