@@ -1778,11 +1778,15 @@ footer {
   .grillagaleria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10px 10px 130px 130px 130px 130px 10px 130px 130px 130px 130px 10px 130px 130px 130px 130px 10px 130px 130px 130px 130px 50px 130px 130px;
+    grid-template-rows: 10px 10px 130px 130px 130px 130px 25px 130px 130px 130px 130px 10px 130px 130px 130px 130px 10px 130px 130px 130px 130px 50px 130px 130px;
     grid-template-areas: "hru hru" "galeriacultotexto galeriacultotexto" "galeriaculto1 galeriaculto2" "galeriaculto3 galeriaculto4" "galeriaculto5 galeriaculto6" "galeriaculto7 galeriaculto8" "galeriaaj galeriaaj" "galeriaaj1 galeriaaj2" "galeriaaj3 galeriaaj4" "galeriaaj5 galeriaaj6" "galeriaaj7 galeriaaj8" "galerianiños galerianiños" "galerianiños1 galerianiños2" "galerianiños3 galerianiños4" "galerianiños5 galerianiños6" "galerianiños7 galerianiños8" "campa campa " "campa1 campa2" "campa3 campa4" "campa5 campa6" "campa7 campa8" "bautismo bautismo" "bautismo1 bautismo2" "bautismo3 bautismo4";
     grid-gap: 30px;
     margin-left: 30px;
     margin-right: 30px;
+  }
+  .fondogaleria {
+    width: 100%;
+    height: 200px;
   }
   .galeriacultotexto {
     font-size: 2rem;
