@@ -338,7 +338,7 @@
     .grillagaleria{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 10px 30px 130px 130px 130px 130px 50px 130px 130px 130px 130px 50px 130px 130px 130px 130px 50px 130px 130px 130px 130px 50px 130px 130px;
+        grid-template-rows: 10px 10px 130px 130px 130px 130px 10px 130px 130px 130px 130px 10px 130px 130px 130px 130px 10px 130px 130px 130px 130px 50px 130px 130px;
         grid-template-areas: 
         "hru hru"
         "galeriacultotexto galeriacultotexto"
@@ -369,5 +369,19 @@
         margin-left: 30px;
         margin-right: 30px;
     }
-    
+    .galeriacultotexto{
+        font-size: 2rem;
+    }
+    .galeriaaj{
+        font-size: 2rem;
+    }
+    .galerianiños{
+        font-size: 2rem;
+    }
+    .campa{
+        font-size: 2rem;
+    }
+    .bautismo{
+        font-size: 2rem;
+    }
 }

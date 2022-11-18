@@ -460,7 +460,7 @@
 	.grillamisiones{
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 80px 10px 35px 150px repeat(4, 85px) 40px 70px 35px 640px 10px 40px 140px repeat(2, 85px) 40px 40px;
+		grid-template-rows: 80px 10px 35px 150px repeat(4, 85px) 40px 70px 35px 640px 10px 40px 140px repeat(2, 100px) 40px 40px;
 		grid-template-areas: 
 		"misionest"
 		"hrm"
