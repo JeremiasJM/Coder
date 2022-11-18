@@ -1,0 +1,373 @@
+.fondogaleria{
+	width: 100%;
+	height: 600px;
+}
+.textodia{
+	padding: 40px;
+}
+.grillagaleria{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 10px 30px 250px 250px 50px 250px 250px 50px 250px 250px 50px 250px 250px 50px 270px;
+	grid-template-areas: 
+	"hru hru hru hru"
+	"galeriacultotexto galeriacultotexto galeriacultotexto galeriacultotexto "
+	"galeriaculto1 galeriaculto2 galeriaculto3 galeriaculto4"
+	"galeriaculto5 galeriaculto6 galeriaculto7 galeriaculto8"
+	"galeriaaj galeriaaj galeriaaj galeriaaj"
+	"galeriaaj1 galeriaaj2 galeriaaj3 galeriaaj4"
+	"galeriaaj5 galeriaaj6 galeriaaj7 galeriaaj8"
+	"galerianiños galerianiños galerianiños galerianiños"
+	"galerianiños1 galerianiños2 galerianiños3 galerianiños4"
+	"galerianiños5 galerianiños6 galerianiños7 galerianiños8"
+	"campa campa campa campa"
+	"campa1 campa2 campa3 campa4"
+	"campa5 campa6 campa7 campa8"
+	"bautismo bautismo bautismo bautismo"
+	"bautismo1 bautismo2 bautismo3 bautismo4"
+	;
+	grid-gap: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.grillagaleria img:hover{
+	transform: scale(1.10);
+}
+.hru{
+	grid-area: hru;
+}
+
+.galeriacultotexto{
+	grid-area: galeriacultotexto;
+	font-size: 3rem;
+	text-align: center;
+}
+.galeriaculto1{
+	grid-area: galeriaculto1;
+	width: 100%;
+	height: 100%;	
+
+}
+.galeriaculto2{
+	grid-area: galeriaculto2;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaculto3{
+	grid-area: galeriaculto3;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaculto4{
+	grid-area: galeriaculto4;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaculto5{
+	grid-area: galeriaculto5;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaculto6{
+	grid-area: galeriaculto6;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaculto7{ 
+	grid-area: galeriaculto7;
+	width: 100%;
+	height: 100%;
+
+}.galeriaculto8{
+	grid-area: galeriaculto8;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj{
+	grid-area: galeriaaj;
+	font-size: 3rem;
+	text-align: center;
+}
+.galeriaaj1{
+	grid-area: galeriaaj1;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj2{
+	grid-area: galeriaaj2;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj3{
+	grid-area: galeriaaj3;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj4{
+	grid-area: galeriaaj4;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj5{
+	grid-area: galeriaaj5;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj6{
+	grid-area: galeriaaj6;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj7{
+	grid-area: galeriaaj7;
+	width: 100%;
+	height: 100%;
+
+}
+.galeriaaj8{
+	grid-area: galeriaaj8;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños{
+	grid-area: galerianiños;
+	font-size: 3rem;
+	text-align: center;
+}
+.galerianiños1{
+	grid-area: galerianiños1;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños2{
+	grid-area: galerianiños2;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños3{
+	grid-area: galerianiños3;
+	width: 100%;
+	height: 100%;
+
+}.galerianiños4{
+	grid-area: galerianiños4;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños5{
+	grid-area: galerianiños5;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños6{
+	grid-area: galerianiños6;
+	width: 100%;
+	height: 100%;
+
+}
+.galerianiños7{
+	grid-area: galerianiños7;
+	width: 100%;
+	height: 100%;;
+
+}
+.galerianiños8{
+	grid-area: galerianiños8;
+	width: 100%;
+	height: 100%;
+
+}
+.campa{
+	grid-area: campa;
+	font-size: 3rem;
+	text-align: center;
+}
+.campa1{
+	grid-area: campa1;
+	width: 100%;
+	height: 100%;
+}
+.campa2{
+	grid-area: campa2;
+	width: 100%;
+	height: 100%;
+}
+.campa3{
+	grid-area: campa3;
+	width: 100%;
+	height: 100%;
+}
+.campa4{
+	grid-area: campa4;
+	width: 100%;
+	height: 100%;
+}
+.campa5{
+	grid-area: campa5;
+	width: 100%;
+	height: 100%;
+}
+.campa6{
+	grid-area: campa6;
+	width: 100%;
+	height: 100%;
+}
+.campa7{
+	grid-area: campa7;
+	width: 100%;
+	height: 100%;
+}
+.campa8{
+	grid-area: campa8;
+	width: 100%;
+	height: 100%;
+}
+.bautismo{
+	grid-area: bautismo;
+	font-size: 3rem;
+	text-align: center;
+	
+
+}
+.bautismo1{
+	grid-area: bautismo1;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 20px;
+
+
+}
+.bautismo2{
+	grid-area: bautismo2;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 20px;
+
+
+}
+.bautismo3{
+	grid-area: bautismo3;
+	width: 100%;
+	height: 100%;  
+	 padding-bottom: 20px;
+
+}
+.bautismo4{
+	grid-area: bautismo4;
+	width: 100%;
+	height: 100%;
+    padding-bottom: 20px;
+}
+/* 1024px */
+@media screen and (max-width: 1024px){
+    .grillagaleria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10px 30px 220px 220px 50px 220px 220px 50px 220px 220px 50px 220px 220px 50px 230px;
+        grid-template-areas: 
+        "hru hru hru hru"
+        "galeriacultotexto galeriacultotexto galeriacultotexto galeriacultotexto "
+        "galeriaculto1 galeriaculto2 galeriaculto3 galeriaculto4"
+        "galeriaculto5 galeriaculto6 galeriaculto7 galeriaculto8"
+        "galeriaaj galeriaaj galeriaaj galeriaaj"
+        "galeriaaj1 galeriaaj2 galeriaaj3 galeriaaj4"
+        "galeriaaj5 galeriaaj6 galeriaaj7 galeriaaj8"
+        "galerianiños galerianiños galerianiños galerianiños"
+        "galerianiños1 galerianiños2 galerianiños3 galerianiños4"
+        "galerianiños5 galerianiños6 galerianiños7 galerianiños8"
+        "campa campa campa campa"
+        "campa1 campa2 campa3 campa4"
+        "campa5 campa6 campa7 campa8"
+        "bautismo bautismo bautismo bautismo"
+        "bautismo1 bautismo2 bautismo3 bautismo4"
+        ;
+        grid-gap: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+}
+/* table */
+@media screen and (max-width: 768px){
+    .grillagaleria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10px 30px 170px 170px 50px 170px 170px 50px 170px 170px 50px 170px 170px 50px 190px;
+        grid-template-areas: 
+        "hru hru hru hru"
+        "galeriacultotexto galeriacultotexto galeriacultotexto galeriacultotexto "
+        "galeriaculto1 galeriaculto2 galeriaculto3 galeriaculto4"
+        "galeriaculto5 galeriaculto6 galeriaculto7 galeriaculto8"
+        "galeriaaj galeriaaj galeriaaj galeriaaj"
+        "galeriaaj1 galeriaaj2 galeriaaj3 galeriaaj4"
+        "galeriaaj5 galeriaaj6 galeriaaj7 galeriaaj8"
+        "galerianiños galerianiños galerianiños galerianiños"
+        "galerianiños1 galerianiños2 galerianiños3 galerianiños4"
+        "galerianiños5 galerianiños6 galerianiños7 galerianiños8"
+        "campa campa campa campa"
+        "campa1 campa2 campa3 campa4"
+        "campa5 campa6 campa7 campa8"
+        "bautismo bautismo bautismo bautismo"
+        "bautismo1 bautismo2 bautismo3 bautismo4"
+        ;
+        grid-gap: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+}
+/* mobile */
+@media screen and (max-width: 500px){
+    .grillagaleria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10px 30px 130px 130px 130px 130px 50px 130px 130px 130px 130px 50px 130px 130px 130px 130px 50px 130px 130px 130px 130px 50px 130px 130px;
+        grid-template-areas: 
+        "hru hru"
+        "galeriacultotexto galeriacultotexto"
+        "galeriaculto1 galeriaculto2" 
+        "galeriaculto3 galeriaculto4"
+        "galeriaculto5 galeriaculto6" 
+        "galeriaculto7 galeriaculto8"
+        "galeriaaj galeriaaj"
+        "galeriaaj1 galeriaaj2" 
+        "galeriaaj3 galeriaaj4"
+        "galeriaaj5 galeriaaj6" 
+        "galeriaaj7 galeriaaj8"
+        "galerianiños galerianiños"
+        "galerianiños1 galerianiños2" 
+        "galerianiños3 galerianiños4"
+        "galerianiños5 galerianiños6" 
+        "galerianiños7 galerianiños8"
+        "campa campa "
+        "campa1 campa2" 
+        "campa3 campa4"
+        "campa5 campa6" 
+        "campa7 campa8"
+        "bautismo bautismo"
+        "bautismo1 bautismo2" 
+        "bautismo3 bautismo4"
+        ;
+        grid-gap: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+}

@@ -1,0 +1,325 @@
+*{
+	border: 0;
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size:100%;
+	line-height: 1,3;
+	background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	
+}
+header{
+ grid-area: headi;
+ width: 100%;
+}
+nav ul{
+	display: table;
+	list-style-type: none;
+	width: 100%;
+	z-index: 1111;
+	position: fixed;
+	background-color: rgba(121, 120, 120, 0.452);
+	padding: 5px;
+   
+}
+nav li{
+	display: table-cell;
+	text-align: center
+}
+nav li a{	
+	color:rgb(255, 255, 255);
+	font-size: 2.5rem;
+	padding: 10px;
+	text-decoration: none
+}
+.fondoindex{
+	
+	width: 100%;
+	height: 600px;
+}
+.mainindex{
+	grid-area: maini;
+	background-color: rgba(143, 139, 139, 0.384);
+	color: white;
+	font-size: 3.5rem;
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+
+}
+.sectionindex{
+	grid-area: sectioni;
+	align-self: center;
+	text-align: center;
+	font-size: 2rem;
+	color: black;
+	padding: 80px;
+}
+.asideindex{
+	grid-area: asidei;
+	align-self: center;
+	text-align: center;
+	font-size: 2.8rem;
+	padding: 10px;
+}
+.ubicacionindex{
+    justify-self: center;
+	align-self: flex-end;
+	margin-top: 400px;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+    border: groove;
+	width: 10%;
+	background-color: black;
+}
+footer{
+	grid-area: footer;
+    color: white;
+	background-color: rgba(143, 139, 139, 0.384);
+	
+}
+.logo{
+	width: 2%;
+}
+.redes{
+	
+	display: flex;	
+   
+   justify-content: center;
+	
+}
+.form{
+	justify-self: center;
+	align-self: center;
+	padding: 10px;
+	
+}
+.contacto{
+	padding: 10px;
+	font-size: 1.5rem;
+}
+.grillasindex{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto 120px 170px 200px 300px 120px;
+	grid-template-areas: 
+	"headi headi headi"
+	"maini maini maini"
+	"sectioni sectioni sectioni"
+	"asidei asidei asidei"
+	"imageni1 imageni2 imageni3"
+	"footer footer footer";
+}
+.imageni1{
+	grid-area: imageni1;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+}
+.imageni2{
+	grid-area: imageni2;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+}
+.imageni3{
+	grid-area: imageni3;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+
+}
+.h6index{
+	color: white;
+	text-align: center;
+	font-size: 1.8rem;
+	padding: 15px;
+	animation-name: aparecer;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.informacion{
+	text-align: center;
+	padding: 10px;
+	font-size: 1.3rem;
+}
+@keyframes aparecer{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+.iconos{
+	margin-left: 925px;
+	width:3.5%;
+	
+}
+/* TAMAÑO TABLET */
+
+@media screen and (max-width: 768px){
+	
+	.grillasindex{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 400px 100px 150px 100px 200px 100px;
+		grid-template-areas: 
+		"headi headi headi"
+		"maini maini maini"
+		"sectioni sectioni sectioni"
+		"asidei asidei asidei"
+		"imageni1 imageni2 imageni3"
+		"footer footer footer";
+	}
+	nav li a{
+		font-size: 2rem;
+	}
+	.fondoindex{
+		width: 100%;
+		height: 400px;
+	}
+	.mainindex{
+		grid-area: maini;
+		background-color: rgba(143, 139, 139, 0.384);
+		color: white;
+		font-size: 2.7rem;
+		text-align: center;
+		padding: 2rem;
+		width: 100%;
+	
+	}
+	.sectionindex{
+		font-size: 1.7rem;
+	}
+	.asideindex{
+		font-size: 2.5rem;
+	}
+	
+	.imageni1{
+		grid-area: imageni1;
+		justify-self: center;
+		align-self: center;
+		width: 90%;
+	}
+	.imageni2{
+		grid-area: imageni2;
+		justify-self: center;
+		align-self: center;
+		width: 90%;
+	}
+	.imageni3{
+		grid-area: imageni3;
+		justify-self: center;
+		align-self: center;
+		width: 90%;
+	}
+	
+	.h6index{
+		color: white;
+		text-align: center;
+		font-size: 1.6rem;
+		 }
+}
+/* MOBILE */
+@media screen and (max-width: 500px){
+
+.grillasindex{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 215px 70px 190px 100px 200px 200px 200px 100px;
+		grid-template-areas: 
+		"headi"
+		"maini"
+		"sectioni"
+		"asidei"
+		"imageni1"
+		"imageni2"
+		"imageni3"
+		"footer ";
+	}
+	nav ul{
+		display: table;
+		list-style-type: none;
+		width: 100%;
+		background-color: rgba(121, 120, 120, 0.452);
+		padding: 10px;
+	}
+	nav li{
+		display: table-cell;
+		text-align: center;
+		
+		
+	}
+	nav li a{
+		color: white;
+		font-size: 1.5rem;
+		text-decoration: none;
+		
+		
+	}
+	.fondoindex{
+		width: 100%;
+		height: 215px;
+	}
+	.mainindex{
+		grid-area: maini;
+		background-color: rgba(143, 139, 139, 0.384);
+		color: white;
+		font-size: 2rem;
+		text-align: center;
+		padding: 2rem;
+		width: 100%;
+	
+	}
+	.sectionindex{
+		grid-area: sectioni;
+		align-self: center;
+		text-align: center;
+		width: 100%;
+		font-size: 1.4rem;
+		color: black;
+		padding: 80px;
+	}
+	.asideindex{
+		font-size: 1.8rem;
+	}
+	
+	.imageni1{
+		grid-area: imageni1;
+		justify-self: center;
+		align-self: center;
+		width: 45%;
+	}
+	.imageni2{
+		grid-area: imageni2;
+		justify-self: center;
+		align-self: center;
+		width: 45%;
+	}
+	.imageni3{
+		grid-area: imageni3;
+		justify-self: center;
+		align-self: center;
+		width: 45%;
+	}
+	
+	.h6index{
+		color: white;
+		text-align: center;
+		font-size: 1.3rem;
+		 }
+	.informacion{
+		font-size: 1.1rem;
+	}
+}

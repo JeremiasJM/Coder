@@ -1,0 +1,458 @@
+.fondoministerios{
+	width: 100%;
+	height: 600px;
+}
+.grillasministerios{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 210px 70px 60px 50px 300px 50px 20px 450px 70px 450px;
+	grid-template-areas: 
+	"kid kid kid"
+	"infkid infkid infkid"
+	"sedesk sedesk sedesk"
+	"zonanorte zonacentrica zonasur"
+	"kid1 kid2 kid3"
+	"hora1 hora2 hora3"
+	"hr hr hr"
+	"jovenes jovenes jovenes"
+	"jovenest jovenest jovenest"
+	"joven1 joven2 joven3";
+}
+.kid{
+	grid-area: kid;
+	justify-self: center;
+	align-self: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.infkid{
+	grid-area: infkid;
+	align-self: center;
+	text-align: center;
+	font-size: 1.7rem;
+	font-style: oblique;
+}
+.sedesk{
+	grid-area: sedesk;
+	align-self: center;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 3rem;
+	font-style: italic;
+}
+.zonanorte{
+	grid-area: zonanorte;
+	align-self: center;
+	text-align: center;
+	font-size: 2rem;
+	font-style: italic;
+}
+.zonacentrica{
+	grid-area: zonacentrica;
+	align-self: center;
+	text-align: center;
+	font-size: 2rem;
+	font-style: italic;
+}
+.zonasur{
+	grid-area: zonasur;
+	align-self: center;
+	text-align: center;
+	font-size: 2rem;
+	font-style: italic;
+}
+.kid1{
+	grid-area: kid1;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+}
+.kid2{
+	grid-area: kid2;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+}
+.kid3{
+	grid-area: kid3;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+}
+.hora1{
+	grid-area: hora1;
+	justify-self: center;
+	align-self: center;
+	font-size: 1.5rem;
+}
+.hora2{
+	grid-area: hora2;
+	justify-self: center;
+	align-self: center;
+	font-size: 1.5rem;
+}
+.hora3{
+	grid-area: hora3;
+	justify-self: center;
+	align-self: center;
+	font-size: 1.5rem;
+}
+.hr{
+	grid-area: hr;
+}
+.jovenes{
+	grid-area: jovenes;
+	justify-self: center;
+	width: 35%;
+	
+}
+.jovenest{
+	grid-area: jovenest;
+	text-align: center;
+	font-size: 1.7rem;
+	justify-self: center;
+	align-self: center;
+	font-style: oblique;
+}
+.joven1{
+	grid-area: joven1;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+	margin-bottom: 10px;
+}
+.joven2{
+	grid-area: joven2;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+	margin-bottom: 10px;
+
+}
+.joven3{
+	grid-area: joven3;
+	justify-self: center;
+	align-self: center;
+	width: 60%;
+
+	
+
+}
+/* 1024px */
+@media screen and ( max-width: 1024px){
+	.grillasministerios{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 150px 70px 60px 50px 200px 50px 20px 360px 90px 250px;
+		grid-template-areas: 
+		"kid kid kid"
+		"infkid infkid infkid"
+		"sedesk sedesk sedesk"
+		"zonanorte zonacentrica zonasur"
+		"kid1 kid2 kid3"
+		"hora1 hora2 hora3"
+		"hr hr hr"
+		"jovenes jovenes jovenes"
+		"jovenest jovenest jovenest"
+		"joven1 joven2 joven3";
+	}
+	.fondoministerios{
+		width: 100%;
+		height: 500px;
+	}
+	.kid{
+        grid-area: kid;
+        width: 130px;
+        height: 130px;
+    }
+	.infkid{
+		grid-area: infkid;
+		align-self: center;
+		text-align: center;
+		font-size: 1.7rem;
+		font-style: oblique;
+	}
+	.sedesk{
+		grid-area: sedesk;
+		align-self: center;
+		text-align: center;
+		text-decoration: underline;
+		font-size: 3rem;
+		font-style: italic;
+	}
+	.zonanorte{
+		grid-area: zonanorte;
+		align-self: center;
+		text-align: center;
+		font-size: 2rem;
+		font-style: italic;
+	}
+	.zonacentrica{
+		grid-area: zonacentrica;
+		align-self: center;
+		text-align: center;
+		font-size: 2rem;
+		font-style: italic;
+	}
+	.zonasur{
+		grid-area: zonasur;
+		align-self: center;
+		text-align: center;
+		font-size: 2rem;
+		font-style: italic;
+	}
+	.kid1{
+		grid-area: kid1;
+		justify-self: center;
+		align-self: center;
+		width: 80%;
+	}
+	.kid2{
+		grid-area: kid2;
+		justify-self: center;
+		align-self: center;
+		width: 80%;
+	}
+	.kid3{
+		grid-area: kid3;
+		justify-self: center;
+		align-self: center;
+		width: 80%;
+	}
+	.hora1{
+		grid-area: hora1;
+		justify-self: center;
+		align-self: center;
+		font-size: 1.5rem;
+	}
+	.hora2{
+		grid-area: hora2;
+		justify-self: center;
+		align-self: center;
+		font-size: 1.5rem;
+	}
+	.hora3{
+		grid-area: hora3;
+		justify-self: center;
+		align-self: center;
+		font-size: 1.5rem;
+	}
+	
+	.jovenes{
+		grid-area: jovenes;
+		justify-self: center;
+		width: 60%;
+	}
+	.jovenest{
+		grid-area: jovenest;
+		text-align: center;
+		font-size: 1.7rem;
+		justify-self: center;
+		align-self: center;
+		font-style: oblique;
+	}
+    .joven1{
+        width: 75%;
+    }
+    .joven2{
+        width: 75%;
+    }
+    .joven3{
+        width: 75%;
+    }
+}
+/* table */
+@media screen and ( max-width: 768px){
+    .grillasministerios{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 150px 70px 40px 40px 170px 40px 20px 280px 95px 210px;
+		grid-template-areas: 
+		"kid kid kid"
+		"infkid infkid infkid"
+		"sedesk sedesk sedesk"
+		"zonanorte zonacentrica zonasur"
+		"kid1 kid2 kid3"
+		"hora1 hora2 hora3"
+		"hr hr hr"
+		"jovenes jovenes jovenes"
+		"jovenest jovenest jovenest"
+		"joven1 joven2 joven3";
+	}
+    .fondoministerios{
+        width: 100%;
+        height: 400px;
+    }
+    .infkid{
+        font-size: 1.5rem;
+    }
+    .sedesk{
+        grid-area: sedesk;
+        font-size: 2.5rem;
+        
+    }
+    .zonanorte{
+        grid-area: zonanorte;
+        font-size: 1.7rem;
+       
+    }
+    .zonacentrica{
+        grid-area: zonacentrica;
+        font-size: 1.7rem;
+        
+    }
+    .zonasur{
+        grid-area: zonasur;
+        font-size: 1.7rem;
+        
+    }
+    .kid1{
+        grid-area: kid1;
+        width: 70%;
+    }
+    .kid2{
+        grid-area: kid2;
+        width: 70%;
+    }
+    .kid3{
+        grid-area: kid3;
+        width: 70%;
+    }
+   
+    .jovenes{
+        grid-area: jovenes;
+        justify-self: center;
+        width: 55%;
+        
+    }
+    .jovenest{
+        grid-area: jovenest;
+        font-size: 1.5rem;
+    }
+    .joven1{
+        grid-area: joven1;
+        width: 90%;
+    }
+    .joven2{
+        grid-area: joven2;
+        width: 90%;
+    }
+    .joven3{
+        grid-area: joven3;
+        width: 90%;
+    }
+}
+/* mobile */
+@media screen and ( max-width: 500px){
+	.grillasministerios{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 120px 110px 60px 30px 20px 155px 30px 20px 155px 30px 20px 155px  10px 177px 130px 180px 180px 180px ;
+		grid-template-areas: 
+		"kid "
+		"infkid "
+		"sedesk "
+		"zonanorte"
+		"hora1"
+		"kid1"
+		
+		"zonacentrica "
+		"hora2"
+		"kid2"
+		
+		"zonasur"
+		"hora3"		
+		" kid3"
+		
+		"hr"
+		"jovenes"
+		"jovenest"
+		"joven1"
+		"joven2"
+		"joven3"
+		;
+	}
+	.fondoministerios{
+		width: 100%;
+		height: 200px;
+	}
+	.kid{
+        grid-area: kid;
+        width: 100px;
+        height: 100px;
+    }
+	.infkid{
+		grid-area: infkid;
+		font-size: 1.4rem;
+		
+	}
+	.sedesk{
+		grid-area: sedesk;
+		font-size: 2.1rem;
+		
+	}
+	.zonanorte{
+		grid-area: zonanorte;
+		font-size: 1.8rem;
+		
+	}
+	.zonacentrica{
+		grid-area: zonacentrica;
+		font-size: 1.8rem;		
+	}
+	.zonasur{
+		grid-area: zonasur;
+		font-size: 1.8rem;
+	}
+	.kid1{
+		grid-area: kid1;
+		justify-self: center;
+		align-self: center;
+		width: 40%;
+	}
+	.kid2{
+		grid-area: kid2;
+		justify-self: center;
+		align-self: center;
+		width: 40%;
+	}
+	.kid3{
+		grid-area: kid3;
+		justify-self: center;
+		align-self: center;
+		width: 40%;
+	}
+	.hora1{
+		grid-area: hora1;
+		font-size: 1.3rem;
+	}
+	.hora2{
+		grid-area: hora2;
+		font-size: 1.3rem;
+	}
+	.hora3{
+		grid-area: hora3;
+		font-size: 1.3rem;
+	}
+	.jovenes{
+		grid-area: jovenes;
+		width: 60%;
+	}
+	.jovenest{
+		grid-area: jovenest;
+		font-size: 1.2rem;
+	}
+	.joven1{
+		grid-area: joven1;
+		width: 40%;
+	}
+	.joven2{
+		grid-area: joven2;
+		width: 40%;
+	}
+	.joven3{
+		grid-area: joven3;
+		width: 40%;
+	}
+}

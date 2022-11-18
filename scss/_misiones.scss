@@ -1,0 +1,582 @@
+.fondomisiones{
+	width: 100%;
+	height: 600px;
+}
+
+.grillamisiones{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 70px 10px 50px 410px 130px 130px 50px 70px 50px 710px  10px 70px 500px 120px 70px 100px;
+	grid-template-areas: 
+	"misionest misionest"
+	"hrm hrm"
+	"nuestro nuestro"
+	"imagenm imagenm"
+	"eve julian"
+	"thiago facu"
+	"suobjetivos suobjetivos"
+	"descripcionobjetivos descripcionobjetivos"
+	"sutrabajo sutrabajo"
+	"sustrabajos sustrabajos"
+	"hrmm hrmm"
+	"futuros futuros"
+	"imagenm2 imagenm2"
+	"matias ruth"
+	"suobjetivo2 suobjetivo2"
+	"descripcionobjetivos2 descripcionobjetivos2"
+	;
+}
+
+.descripcionesmisiones{
+	text-align: center;
+	padding-top: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.misionest{
+	grid-area: misionest;
+	justify-self: center;
+	align-self: center;
+	text-align: center;
+	font-size: 2rem;
+	font-style: oblique;
+
+}
+.suobjetivo{
+	grid-area: suobjetivos;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
+	font-size: 3rem;
+}
+.descripcionobjetivos{
+	grid-area: descripcionobjetivos;
+	align-self: center;
+	font-size: 1.8rem;
+	text-align: center;
+
+}
+.suvisiondescripcion{
+	font-size: 1.5;
+}
+.sutrabajo{
+	grid-area: sutrabajo;
+	text-align: center;
+	font-size: 3rem;
+
+}
+.sustrabajos{
+	grid-area: sustrabajos;
+}
+.grillasutrabajo{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 300px 300px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	grid-template-areas: 
+	"trabajo1 trabajo2 trabajo3 trabajo4"
+	"trabajo5 trabajo6 trabajo7 trabajo8";
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.grillasutrabajo img:hover{
+	transform: scale(1.10);
+}
+.imagentrabajo1{
+	grid-area:trabajo1;
+	width: 100%;
+	height: 100%;
+
+	
+}
+.imagentrabajo2{
+	grid-area: trabajo2;
+	width: 100%;
+	height: 100%;
+
+	
+}
+.imagentrabajo3{
+	grid-area: trabajo3;
+	width: 100%;
+	height: 100%;
+
+	
+
+}
+.imagentrabajo4{
+	grid-area: trabajo4;
+   	width: 100%;
+	height: 100%;
+	
+}
+.imagentrabajo5{
+	grid-area: trabajo5;
+	width: 100%;
+	height: 100%;
+
+}
+.imagentrabajo6{
+	grid-area:trabajo6;
+	width: 100%;
+	height: 100%;
+
+}
+.imagentrabajo7{
+	grid-area:trabajo7;
+	width: 100%;
+	height: 100%;
+
+}
+.imagentrabajo8{
+	grid-area:trabajo8;
+	width: 100%;
+	height: 100%;
+
+}
+
+.hrm{
+	grid-area: hrm;
+}
+.nuestro{
+	grid-area: nuestro;
+	justify-self: center;
+	align-self: center;
+	font-size: 3rem;
+	font-style: italic;
+	text-decoration: underline;
+}
+.imagenm{
+	grid-area: imagenm;
+	width: 20%;
+	justify-self: center;
+	align-self: center;
+}
+.eve{
+	grid-area: eve;
+	justify-self: center;
+	font-size: 1.7rem;
+	
+}
+.julian{
+	grid-area: julian;
+	justify-self: center;
+	font-size: 1.7rem;
+}
+.thiago{
+	grid-area: thiago;
+	justify-self: center;
+	font-size: 1.7rem;
+}
+.facu{
+	grid-area: facu;
+	justify-self: center;
+	font-size: 1.7rem;
+}
+
+.hrmm{
+	grid-area: hrmm;
+}
+.futuros{
+	grid-area: futuros;
+	justify-self: center;
+	align-self: center;
+	font-size: 3rem;
+	font-style: italic;
+	text-decoration: underline;
+}
+.imagenm2{
+	grid-area: imagenm2;
+	width: 20%;
+	justify-self: center;
+	align-self: center;
+}
+.matias{
+	grid-area: matias;
+	justify-self: center;
+	font-size: 1.7rem;
+}
+.ruth{
+	grid-area: ruth;
+	justify-self: center;
+	font-size: 1.7rem;
+}
+.suobjetivo2{
+	grid-area: suobjetivo2;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
+	font-size: 3rem;
+}
+.descripcionobjetivos2{
+	grid-area: descripcionobjetivos2;
+	align-self: center;
+	font-size: 1.8rem;
+	text-align: center;
+
+}
+
+/* 1024px */
+@media screen and ( max-width: 1024px){
+    .grillamisiones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 10px 50px 280px 130px 130px 50px 70px 50px 550px  10px 50px 280px 120px 55px 80px;
+        grid-template-areas: 
+        "misionest misionest"
+        "hrm hrm"
+        "nuestro nuestro"
+        "imagenm imagenm"
+        "eve julian"
+        "thiago facu"
+        "suobjetivos suobjetivos"
+        "descripcionobjetivos descripcionobjetivos"
+        "sutrabajo sutrabajo"
+        "sustrabajos sustrabajos"
+        "hrmm hrmm"
+        "futuros futuros"
+        "imagenm2 imagenm2"
+        "matias ruth"
+        "suobjetivo2 suobjetivo2"
+        "descripcionobjetivos2 descripcionobjetivos2"
+        ;
+    }
+    .fondomisiones{
+        width: 100%;
+		height: 500px;
+    }
+   
+    .misionest{
+        grid-area: misionest;
+        font-size: 2rem;
+    }
+    .nuestro{
+        grid-area: nuestro;
+        font-size: 2.5rem;
+    }
+    .imagenm{
+        grid-area: imagenm;
+        width: 25%;
+    }
+    .eve{
+        grid-area: eve;
+        font-size: 1.5rem;
+    }
+    .julian{
+        grid-area: julian;
+        font-size: 1.5rem;
+    }
+    .thiago{
+        grid-area: thiago;
+        font-size: 1.5rem;
+    }
+    .facu{
+        grid-area: facu;
+        font-size: 1.5rem;
+    }
+    .suobjetivo{
+        grid-area: suobjetivos;
+        font-size: 2.5rem;
+    }
+    .descripcionobjetivos{
+        grid-area: descripcionobjetivos;
+        font-size: 1.5rem;
+    
+    }
+    .suvisiondescripcion{
+        font-size: 1.5;
+    }
+    .sutrabajo{
+        grid-area: sutrabajo;
+        font-size: 2.5rem;
+    
+    }
+    .sustrabajos{
+        grid-area: sustrabajos;
+    }
+    .grillasutrabajo{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 250px 250px;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-areas: 
+        "trabajo1 trabajo2 trabajo3 trabajo4"
+        "trabajo5 trabajo6 trabajo7 trabajo8";
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+       
+    
+    .futuros{
+        grid-area: futuros;
+        font-size: 2.5rem;
+    }
+    .imagenm2{
+        grid-area: imagenm2;
+        width: 25%;
+    }
+    .matias{
+        grid-area: matias;
+        font-size: 1.5rem;
+    }
+    .ruth{
+        grid-area: ruth;
+        font-size: 1.5rem;
+    }
+    .suobjetivo2{
+        grid-area: suobjetivo2;
+        font-size: 2.5rem;
+    }
+    .descripcionobjetivos2{
+        grid-area: descripcionobjetivos2;
+        font-size: 1.5rem;
+    
+    }
+
+	 }
+/* table */
+@media screen and ( max-width: 768px){
+	.grillamisiones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 10px 45px 220px 130px 130px 50px 70px 50px 400px  10px 50px 220px 120px 45px 70px;
+        grid-template-areas: 
+        "misionest misionest"
+        "hrm hrm"
+        "nuestro nuestro"
+        "imagenm imagenm"
+        "eve julian"
+        "thiago facu"
+        "suobjetivos suobjetivos"
+        "descripcionobjetivos descripcionobjetivos"
+        "sutrabajo sutrabajo"
+        "sustrabajos sustrabajos"
+        "hrmm hrmm"
+        "futuros futuros"
+        "imagenm2 imagenm2"
+        "matias ruth"
+        "suobjetivo2 suobjetivo2"
+        "descripcionobjetivos2 descripcionobjetivos2"
+        ;
+    }
+    .fondomisiones{
+        width: 100%;
+		height: 400px;
+    }
+    
+    .misionest{
+        grid-area: misionest;
+        font-size: 1.7rem;
+    }
+    .nuestro{
+        grid-area: nuestro;
+        font-size: 2.2rem;
+    }
+    .imagenm{
+        grid-area: imagenm;
+        width: 25%;
+    }
+    .eve{
+        grid-area: eve;
+        font-size: 1.3rem;
+    }
+    .julian{
+        grid-area: julian;
+        font-size: 1.3rem;
+    }
+    .thiago{
+        grid-area: thiago;
+        font-size: 1.3rem;
+    }
+    .facu{
+        grid-area: facu;
+        font-size: 1.3rem;
+    }
+    .suobjetivo{
+        grid-area: suobjetivos;
+        font-size: 2.2rem;
+    }
+    .descripcionobjetivos{
+        grid-area: descripcionobjetivos;
+        font-size: 1.3rem;
+    
+    }
+    .suvisiondescripcion{
+        font-size: 1.5rem;
+    }
+    .sutrabajo{
+        grid-area: sutrabajo;
+        font-size: 2.2rem;
+    
+    }
+    .sustrabajos{
+        grid-area: sustrabajos;
+    }
+    .grillasutrabajo{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 180px 180px;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-areas: 
+        "trabajo1 trabajo2 trabajo3 trabajo4"
+        "trabajo5 trabajo6 trabajo7 trabajo8";
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+       
+    
+    .futuros{
+        grid-area: futuros;
+        font-size: 2.2rem;
+    }
+    .imagenm2{
+        grid-area: imagenm2;
+        width: 25%;
+    }
+    .matias{
+        grid-area: matias;
+        font-size: 1.3rem;
+    }
+    .ruth{
+        grid-area: ruth;
+        font-size: 1.3rem;
+    }
+    .suobjetivo2{
+        grid-area: suobjetivo2;
+        font-size: 2.2rem;
+    }
+    .descripcionobjetivos2{
+        grid-area: descripcionobjetivos2;
+        font-size: 1.3rem;
+    
+    }
+ }
+
+/* mobile */
+@media screen and ( max-width: 500px){
+	.grillamisiones{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 80px 10px 35px 150px repeat(4, 85px) 40px 70px 35px 640px 10px 40px 140px repeat(2, 85px) 40px 40px;
+		grid-template-areas: 
+		"misionest"
+		"hrm"
+		"nuestro"
+		"imagenm"
+		"eve"
+		"julian"
+		"thiago"
+		"facu"
+        "suobjetivos"
+        "descripcionobjetivos"
+        "sutrabajo"
+        "sustrabajos"
+		"hrmm"
+		"futuros"
+		"imagenm2"
+		"matias"
+		"ruth"
+        "suobjetivo2"
+        "descripcionobjetivos2"
+		;
+	}
+    .fondomisiones{
+        width: 100%;
+		height: 200px;
+    }
+	.misionest{
+        grid-area: misionest;
+        font-size: 1.3rem;
+    }
+   
+    .nuestro{
+        grid-area: nuestro;
+        font-size: 1.8rem;
+    }
+    .imagenm{
+        grid-area: imagenm;
+        width: 25%;
+    }
+    .eve{
+        grid-area: eve;
+        font-size: 1.1rem;
+    }
+    .julian{
+        grid-area: julian;
+        font-size: 1.1rem;
+    }
+    .thiago{
+        grid-area: thiago;
+        font-size: 1.1rem;
+    }
+    .facu{
+        grid-area: facu;
+        font-size: 1.1rem;
+    }
+    .suobjetivo{
+        grid-area: suobjetivos;
+        font-size: 2rem;
+    }
+    
+    .descripcionobjetivos{
+        grid-area: descripcionobjetivos;
+        font-size: 1.2rem;
+    
+    }
+    .suvisiondescripcion{       
+        font-size: 1.2rem;                                                                                                                                  
+    }
+    .sutrabajo{
+        grid-area: sutrabajo;
+        font-size: 2rem;
+    
+    }
+    .sustrabajos{
+        grid-area: sustrabajos;
+    }
+    .grillasutrabajo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 140px 140px;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        grid-template-areas: 
+        "trabajo1 trabajo2"
+        "trabajo3 trabajo4"
+        "trabajo5 trabajo6"
+        "trabajo7 trabajo8";
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+       
+    
+    .futuros{
+        grid-area: futuros;
+        font-size: 2rem;
+    }
+    .imagenm2{
+        grid-area: imagenm2;
+        width: 25%;
+    }
+    .matias{
+        grid-area: matias;
+        font-size: 1.1rem;
+    }
+    .ruth{
+        grid-area: ruth;
+        font-size: 1.1rem;
+    }
+    .suobjetivo2{
+        grid-area: suobjetivo2;
+        font-size: 2rem;
+    }
+    .descripcionobjetivos2{
+        grid-area: descripcionobjetivos2;
+        font-size: 1.1rem;
+    
+    }
+ 
+}

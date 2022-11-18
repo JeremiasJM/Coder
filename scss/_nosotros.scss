@@ -1,0 +1,321 @@
+.fondonosotros{
+	width: 100%;
+	height: 600px;
+}
+
+.pastorgeneral{
+	align-self: center;
+	font-size: 3rem;
+	font-style: italic;
+	text-decoration: underline;
+	text-align: center;
+	
+	
+}
+.imagenpastor1{
+    grid-area: foto1;
+	width: 400px;
+	height: 400px;
+	justify-self: center;
+	border-radius: 50%;
+
+	
+}
+.imagenpastor2{    
+    grid-area: foto2;
+	width: 400px;
+	height: 400px;
+	justify-self: center;
+	border-radius: 50%;
+
+}
+.imagenpastor3{
+    grid-area: foto3;
+	width: 400px;
+	height: 400px;
+	justify-self: center;
+	border-radius: 50%;
+
+	
+}
+.nombre{
+	font-size: 2rem;
+	text-align: center;
+	width: 100%;
+
+}
+
+.descripciones{
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 50px;
+	width: 100%;
+}
+
+.grillasnosotros{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 70px 450px 140px 70px 450px 140px 70px 450px 100px 150px ;
+	grid-template-areas:
+	"pastores pastores "
+	"foto1 foto1"
+	"descripcion1 descripcion2"
+	"pastoressur pastoressur"
+	"foto2 foto2"
+	"descripcion11 descripcion22"
+	"pastoranorte pastoranorte"
+	"foto3 foto3"
+	"descripcion3 descripcion3"
+	"vision vision"
+	;
+}
+	
+.vision{
+	grid-area: vision;
+}
+.pastores{
+	grid-area: pastores;
+	justify-content: center;
+	
+}
+
+.descripcion1{
+	grid-area: descripcion1;
+}
+.descripcion2{
+	grid-area: descripcion2;
+}
+.pastoressur{
+	grid-area: pastoressur;
+}
+
+.sur{
+	grid-area: sur;
+}
+.descripcion11{
+	grid-area: descripcion11;
+}
+.descripcion22{
+	grid-area: descripcion22;
+}
+.pastoranorte{
+	grid-area: pastoranorte;
+}
+
+.descripcion3{
+	grid-area: descripcion3;
+	
+}
+.nuestravision{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+/* 1024px */
+@media screen and ( max-width: 1024px){
+	.grillasnosotros{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows:  60px 300px 170px 60px 300px 170px 70px 310px 100px 150px ;
+		grid-template-areas: 
+		"pastores pastores "
+		"foto1 foto1"
+		"descripcion1 descripcion2"
+		"pastoressur pastoressur"
+		"foto2 foto2"
+		"descripcion11 descripcion22"
+		"pastoranorte pastoranorte"
+		"foto3 foto3"
+		"descripcion3 descripcion3"
+		"vision vision"
+		;
+	}
+	.fondonosotros{
+		width: 100%;
+		height: 500px;
+	}
+    .imagenpastor1{
+        grid-area: foto1;
+        width: 300px;
+        height: 300px;
+        justify-self: center;
+        border-radius: 50%;
+    
+        
+    }
+    .imagenpastor2{    
+        grid-area: foto2;
+        width: 300px;
+        height: 300px;
+        justify-self: center;
+        border-radius: 50%;
+    
+    }
+    .imagenpastor3{
+        grid-area: foto3;
+        width: 300px;
+        height: 300px;
+        justify-self: center;
+        border-radius: 50%;
+    
+        
+    }
+
+
+	
+} 
+/* table */
+@media screen and ( max-width: 768px){
+    .grillasnosotros{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows:  55px 250px 170px 55px 250px 170px 70px 250px 100px 150px ;
+		grid-template-areas: 
+		"pastores pastores "
+		"foto1 foto1"
+		"descripcion1 descripcion2"
+		"pastoressur pastoressur"
+		"foto2 foto2"
+		"descripcion11 descripcion22"
+		"pastoranorte pastoranorte"
+		"foto3 foto3"
+		"descripcion3 descripcion3"
+		"vision vision"
+		;
+	}
+	.fondonosotros{
+		width: 100%;
+		height: 400px;
+	}
+    .pastorgeneral{
+        font-size: 2.5rem;
+    }
+    .descripciones{
+        font-size: 1.3rem;
+    }
+    .imagenpastor1{
+        grid-area: foto1;
+        width: 250px;
+        height: 250px;
+        justify-self: center;
+        border-radius: 50%;
+    
+        
+    }
+    .imagenpastor2{    
+        grid-area: foto2;
+        width: 250px;
+        height: 250px;
+        justify-self: center;
+        border-radius: 50%;
+    
+    }
+    .imagenpastor3{
+        grid-area: foto3;
+        width: 250px;
+        height: 250px;
+        justify-self: center;
+        border-radius: 50%;
+    
+        
+    }
+}
+/* mobile */
+@media screen and ( max-width: 500px){
+	.grillasnosotros{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows:  35px 185px 115px 115px 35px 185px 115px 115px 30px 190px 115px 150px ;
+		grid-template-areas: 
+		"pastores  "
+		"foto1 "
+		"descripcion1"
+		"descripcion2"
+		"pastoressur "
+		"foto2 "
+		"descripcion11"
+		"descripcion22"
+		"pastoranorte"
+		"foto3 "
+		"descripcion3 "
+		"vision "
+		;
+	}
+	.vision{
+		grid-area: vision;
+		font-size: 2;
+	}
+	.fondonosotros{
+		width: 100%;
+		height: 200px;
+	}
+	.pastores{
+		grid-area: pastores;
+		justify-content: center;
+		font-size: 2rem;
+		
+	}
+	.imagenpastor1{
+        grid-area: foto1;
+        width: 180px;
+        height: 180px;
+       
+    
+        
+    }
+    .imagenpastor2{    
+        grid-area: foto2;
+        width: 180px;
+        height: 180px;
+       
+    
+    }
+    .imagenpastor3{
+        grid-area: foto3;
+        width: 180px;
+        height: 180px;
+        
+    
+        
+    }
+	.descripcion1{
+		grid-area: descripcion1;
+		font-size: 1.2rem;
+		
+	}
+	.descripcion2{
+		grid-area: descripcion2;
+		font-size: 1.2rem;
+	}
+	.pastoressur{
+		grid-area: pastoressur;
+		justify-content: center;
+		font-size: 2rem;
+	}
+	
+	
+	.descripcion11{
+		grid-area: descripcion11;
+		font-size: 1.2rem;
+	}
+	.descripcion22{
+		grid-area: descripcion22;
+		font-size: 1.2rem;
+	}
+	.pastoranorte{
+		grid-area: pastoranorte;
+		justify-content: center;
+		font-size: 2rem;
+	}
+	
+	.descripcion3{
+		grid-area: descripcion3;
+		font-size: 1.2rem;
+		
+	}
+	.nuestravision{
+        font-size: 2rem ;
+    }
+}
