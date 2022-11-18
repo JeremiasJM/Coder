@@ -231,13 +231,13 @@ footer{
 		font-size: 1.6rem;
 		 }
 }
-/* MOBILE */
+/* MOBILE 500px */
 @media screen and (max-width: 500px){
 
 .grillasindex{
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 215px 70px 190px 100px 200px 200px 200px 100px;
+		grid-template-rows: 215px 70px 190px 100px repeat(3, 160px) 100px;
 		grid-template-areas: 
 		"headi"
 		"maini"
@@ -323,3 +323,70 @@ footer{
 		font-size: 1.1rem;
 	}
 }
+/* MOBILE 375px */
+@media screen and (max-width: 375px){
+
+	.grillasindex{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 215px 70px 230px 100px repeat(3, 150px) 100px;
+			grid-template-areas: 
+			"headi"
+			"maini"
+			"sectioni"
+			"asidei"
+			"imageni1"
+			"imageni2"
+			"imageni3"
+			"footer ";
+		}
+		
+		nav li a{
+			color: white;
+			font-size: 1.3rem;
+			text-decoration: none;
+		}
+	}
+	/* MOBILE 320px */
+@media screen and (max-width: 320px){
+
+	.grillasindex{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 215px 70px 280px 100px repeat(3, 130px) 100px;
+			grid-template-areas: 
+			"headi"
+			"maini"
+			"sectioni"
+			"asidei"
+			"imageni1"
+			"imageni2"
+			"imageni3"
+			"footer ";
+		}
+		nav ul{
+			display: table;
+			list-style-type: none;
+			width: 100%;
+			background-color: rgba(121, 120, 120, 0.452);
+			padding: 5px;
+			padding-left: 1px;
+		}
+		nav li a{
+			color: white;
+			font-size: 1.1rem;
+			text-decoration: none;
+		}
+		.mainindex{
+		    grid-area: maini;
+		    font-size: 1.8rem;
+		    padding: 1.5rem;
+		    
+		}
+		.sectionindex{
+			grid-area: sectioni;
+			width: 100%;
+			font-size: 1.3rem;
+			color: black;
+		}
+	}

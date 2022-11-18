@@ -226,12 +226,12 @@ footer {
     font-size: 1.6rem;
   }
 }
-/* MOBILE */
+/* MOBILE 500px */
 @media screen and (max-width: 500px) {
   .grillasindex {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 215px 70px 190px 100px 200px 200px 200px 100px;
+    grid-template-rows: 215px 70px 190px 100px repeat(3, 160px) 100px;
     grid-template-areas: "headi" "maini" "sectioni" "asidei" "imageni1" "imageni2" "imageni3" "footer ";
   }
   nav ul {
@@ -302,6 +302,53 @@ footer {
     font-size: 1.1rem;
   }
 }
+/* MOBILE 375px */
+@media screen and (max-width: 375px) {
+  .grillasindex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 215px 70px 230px 100px repeat(3, 150px) 100px;
+    grid-template-areas: "headi" "maini" "sectioni" "asidei" "imageni1" "imageni2" "imageni3" "footer ";
+  }
+  nav li a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+}
+/* MOBILE 320px */
+@media screen and (max-width: 320px) {
+  .grillasindex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 215px 70px 280px 100px repeat(3, 130px) 100px;
+    grid-template-areas: "headi" "maini" "sectioni" "asidei" "imageni1" "imageni2" "imageni3" "footer ";
+  }
+  nav ul {
+    display: table;
+    list-style-type: none;
+    width: 100%;
+    background-color: rgba(121, 120, 120, 0.452);
+    padding: 5px;
+    padding-left: 1px;
+  }
+  nav li a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+  .mainindex {
+    grid-area: maini;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+  }
+  .sectionindex {
+    grid-area: sectioni;
+    width: 100%;
+    font-size: 1.3rem;
+    color: black;
+  }
+}
 .fondonosotros {
   width: 100%;
   height: 600px;
@@ -355,7 +402,7 @@ footer {
 .grillasnosotros {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 70px 450px 140px 70px 450px 140px 70px 450px 100px 150px;
+  grid-template-rows: 70px 450px 140px 70px 450px 140px 70px 450px 110px 150px;
   grid-template-areas: "pastores pastores " "foto1 foto1" "descripcion1 descripcion2" "pastoressur pastoressur" "foto2 foto2" "descripcion11 descripcion22" "pastoranorte pastoranorte" "foto3 foto3" "descripcion3 descripcion3" "vision vision";
 }
 
@@ -412,7 +459,7 @@ footer {
   .grillasnosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 60px 300px 170px 60px 300px 170px 70px 310px 100px 150px;
+    grid-template-rows: 60px 300px 200px 60px 300px 200px 70px 310px 120px 130px;
     grid-template-areas: "pastores pastores " "foto1 foto1" "descripcion1 descripcion2" "pastoressur pastoressur" "foto2 foto2" "descripcion11 descripcion22" "pastoranorte pastoranorte" "foto3 foto3" "descripcion3 descripcion3" "vision vision";
   }
   .fondonosotros {
@@ -446,7 +493,7 @@ footer {
   .grillasnosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 55px 250px 170px 55px 250px 170px 70px 250px 100px 150px;
+    grid-template-rows: 55px 250px 210px 55px 250px 210px 70px 250px 120px 130px;
     grid-template-areas: "pastores pastores " "foto1 foto1" "descripcion1 descripcion2" "pastoressur pastoressur" "foto2 foto2" "descripcion11 descripcion22" "pastoranorte pastoranorte" "foto3 foto3" "descripcion3 descripcion3" "vision vision";
   }
   .fondonosotros {
@@ -481,12 +528,12 @@ footer {
     border-radius: 50%;
   }
 }
-/* mobile */
+/* mobile 500px */
 @media screen and (max-width: 500px) {
   .grillasnosotros {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 35px 185px 130px 130px 35px 185px 130px 130px 30px 190px 130px 170px;
+    grid-template-rows: 35px 185px 155px 170px 35px 185px 170px 170px 30px 190px 155px 170px;
     grid-template-areas: "pastores  " "foto1 " "descripcion1" "descripcion2" "pastoressur " "foto2 " "descripcion11" "descripcion22" "pastoranorte" "foto3 " "descripcion3 " "vision ";
   }
   .vision {
@@ -551,6 +598,24 @@ footer {
     font-size: 2rem;
   }
 }
+/* mobile 375*/
+@media screen and (max-width: 375px) {
+  .grillasnosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 185px 160px 180px 35px 185px 175px 195px 30px 190px 185px 180px;
+    grid-template-areas: "pastores  " "foto1 " "descripcion1" "descripcion2" "pastoressur " "foto2 " "descripcion11" "descripcion22" "pastoranorte" "foto3 " "descripcion3 " "vision ";
+  }
+}
+/* mobile 320*/
+@media screen and (max-width: 320px) {
+  .grillasnosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 185px 200px 225px 35px 185px 200px 225px 30px 190px 220px 230px;
+    grid-template-areas: "pastores  " "foto1 " "descripcion1" "descripcion2" "pastoressur " "foto2 " "descripcion11" "descripcion22" "pastoranorte" "foto3 " "descripcion3 " "vision ";
+  }
+}
 .fondoministerios {
   width: 100%;
   height: 600px;
@@ -559,7 +624,7 @@ footer {
 .grillasministerios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 210px 70px 60px 50px 300px 50px 20px 450px 70px 450px;
+  grid-template-rows: 210px 70px 60px 50px 300px 50px 20px 350px 80px 300px;
   grid-template-areas: "kid kid kid" "infkid infkid infkid" "sedesk sedesk sedesk" "zonanorte zonacentrica zonasur" "kid1 kid2 kid3" "hora1 hora2 hora3" "hr hr hr" "jovenes jovenes jovenes" "jovenest jovenest jovenest" "joven1 joven2 joven3";
 }
 
@@ -1190,7 +1255,7 @@ footer {
   .grillamisiones {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px 10px 50px 280px 130px 130px 50px 70px 50px 550px 10px 50px 280px 120px 55px 80px;
+    grid-template-rows: 70px 10px 50px 280px 180px 130px 50px 80px 50px 550px 10px 50px 280px 155px 55px 80px;
     grid-template-areas: "misionest misionest" "hrm hrm" "nuestro nuestro" "imagenm imagenm" "eve julian" "thiago facu" "suobjetivos suobjetivos" "descripcionobjetivos descripcionobjetivos" "sutrabajo sutrabajo" "sustrabajos sustrabajos" "hrmm hrmm" "futuros futuros" "imagenm2 imagenm2" "matias ruth" "suobjetivo2 suobjetivo2" "descripcionobjetivos2 descripcionobjetivos2";
   }
   .fondomisiones {
@@ -1283,7 +1348,7 @@ footer {
   .grillamisiones {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px 10px 45px 220px 130px 130px 50px 70px 50px 400px 10px 50px 220px 120px 45px 70px;
+    grid-template-rows: 70px 10px 45px 220px 170px 100px 50px 85px 50px 400px 10px 50px 220px 160px 45px 70px;
     grid-template-areas: "misionest misionest" "hrm hrm" "nuestro nuestro" "imagenm imagenm" "eve julian" "thiago facu" "suobjetivos suobjetivos" "descripcionobjetivos descripcionobjetivos" "sutrabajo sutrabajo" "sustrabajos sustrabajos" "hrmm hrmm" "futuros futuros" "imagenm2 imagenm2" "matias ruth" "suobjetivo2 suobjetivo2" "descripcionobjetivos2 descripcionobjetivos2";
   }
   .fondomisiones {
@@ -1376,7 +1441,7 @@ footer {
   .grillamisiones {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 10px 35px 150px repeat(4, 100px) 40px 70px 35px 640px 10px 40px 140px repeat(2, 100px) 40px 40px;
+    grid-template-rows: 80px 10px 35px 150px repeat(2, 130px) repeat(2, 80px) 40px 110px 35px 640px 10px 40px 140px repeat(2, 130px) 40px 40px;
     grid-template-areas: "misionest" "hrm" "nuestro" "imagenm" "eve" "julian" "thiago" "facu" "suobjetivos" "descripcionobjetivos" "sutrabajo" "sustrabajos" "hrmm" "futuros" "imagenm2" "matias" "ruth" "suobjetivo2" "descripcionobjetivos2";
   }
   .fondomisiones {
@@ -1470,6 +1535,15 @@ footer {
   .descripcionobjetivos2 {
     grid-area: descripcionobjetivos2;
     font-size: 1.1rem;
+  }
+}
+/* mobile */
+@media screen and (max-width: 500px) {
+  .grillamisiones {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 10px 35px 150px repeat(2, 150px) repeat(2, 80px) 40px 140px 65px 570px 10px 40px 140px repeat(2, 140px) 40px 40px;
+    grid-template-areas: "misionest" "hrm" "nuestro" "imagenm" "eve" "julian" "thiago" "facu" "suobjetivos" "descripcionobjetivos" "sutrabajo" "sustrabajos" "hrmm" "futuros" "imagenm2" "matias" "ruth" "suobjetivo2" "descripcionobjetivos2";
   }
 }
 .fondogaleria {
@@ -1778,11 +1852,11 @@ footer {
   .grillagaleria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10px 10px 130px 130px 130px 130px 25px 130px 130px 130px 130px 10px 130px 130px 130px 130px 10px 130px 130px 130px 130px 50px 130px 130px;
+    grid-template-rows: 10px 10px 130px 130px 130px 130px 35px 130px 130px 130px 130px 10px 130px 130px 130px 130px 10px 130px 130px 130px 130px 50px 130px 130px;
     grid-template-areas: "hru hru" "galeriacultotexto galeriacultotexto" "galeriaculto1 galeriaculto2" "galeriaculto3 galeriaculto4" "galeriaculto5 galeriaculto6" "galeriaculto7 galeriaculto8" "galeriaaj galeriaaj" "galeriaaj1 galeriaaj2" "galeriaaj3 galeriaaj4" "galeriaaj5 galeriaaj6" "galeriaaj7 galeriaaj8" "galerianiños galerianiños" "galerianiños1 galerianiños2" "galerianiños3 galerianiños4" "galerianiños5 galerianiños6" "galerianiños7 galerianiños8" "campa campa " "campa1 campa2" "campa3 campa4" "campa5 campa6" "campa7 campa8" "bautismo bautismo" "bautismo1 bautismo2" "bautismo3 bautismo4";
-    grid-gap: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+    grid-gap: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .fondogaleria {
     width: 100%;

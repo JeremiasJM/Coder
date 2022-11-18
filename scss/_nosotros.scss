@@ -55,7 +55,7 @@
 .grillasnosotros{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 70px 450px 140px 70px 450px 140px 70px 450px 100px 150px ;
+	grid-template-rows: 70px 450px 140px 70px 450px 140px 70px 450px 110px 150px ;
 	grid-template-areas:
 	"pastores pastores "
 	"foto1 foto1"
@@ -118,7 +118,7 @@
 	.grillasnosotros{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows:  60px 300px 170px 60px 300px 170px 70px 310px 100px 150px ;
+		grid-template-rows:  60px 300px 200px 60px 300px 200px 70px 310px 120px 130px ;
 		grid-template-areas: 
 		"pastores pastores "
 		"foto1 foto1"
@@ -171,7 +171,7 @@
     .grillasnosotros{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows:  55px 250px 170px 55px 250px 170px 70px 250px 100px 150px ;
+		grid-template-rows:  55px 250px 210px 55px 250px 210px 70px 250px 120px 130px ;
 		grid-template-areas: 
 		"pastores pastores "
 		"foto1 foto1"
@@ -222,12 +222,12 @@
         
     }
 }
-/* mobile */
+/* mobile 500px */
 @media screen and ( max-width: 500px){
 	.grillasnosotros{
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows:  35px 185px 130px 130px 35px 185px 130px 130px 30px 190px 130px 170px ;
+		grid-template-rows:  35px 185px 155px 170px 35px 185px 170px 170px 30px 190px 155px 170px ;
 		grid-template-areas: 
 		"pastores  "
 		"foto1 "
@@ -319,3 +319,47 @@
         font-size: 2rem ;
     }
 }
+/* mobile 375*/
+@media screen and ( max-width: 375px){
+	.grillasnosotros{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows:  35px 185px 160px 180px 35px 185px 175px 195px 30px 190px 185px 180px ;
+		grid-template-areas: 
+		"pastores  "
+		"foto1 "
+		"descripcion1"
+		"descripcion2"
+		"pastoressur "
+		"foto2 "
+		"descripcion11"
+		"descripcion22"
+		"pastoranorte"
+		"foto3 "
+		"descripcion3 "
+		"vision "
+		;
+	}
+ }
+ /* mobile 320*/
+@media screen and ( max-width: 320px){
+	.grillasnosotros{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows:  35px 185px 200px 225px 35px 185px 200px 225px 30px 190px 220px 230px ;
+		grid-template-areas: 
+		"pastores  "
+		"foto1 "
+		"descripcion1"
+		"descripcion2"
+		"pastoressur "
+		"foto2 "
+		"descripcion11"
+		"descripcion22"
+		"pastoranorte"
+		"foto3 "
+		"descripcion3 "
+		"vision "
+		;
+	}
+ }
